@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+
+
+
+
+.menu-item {
+  padding: 0 17px;
+  margin-left:0px;
+  user-select: none;
+  cursor: pointer;
+  border: none;
+}
+.menu-item-wrapper.active {
+  color:#FF6000
+}
+.menu-item.active {
+  color:#FF6000
+}
+.menu-item.selected {
+  /* Apply centering styles here */
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+
+.shadowed{
+  box-shadow: 0px -6px 6px -4px rgba(0,0,0,0.1);
+ 
+}
