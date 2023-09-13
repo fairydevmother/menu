@@ -3,6 +3,9 @@ import ScrollMenu from "react-horizontal-scroll-menu";
 import "./App.css";
 import SearchBar from "./Components/SearchBar"; 
 import foodie from "./img/food.jpg"
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import Routes instead of Switch
+
+import Restaurant from './Components/Restaurant';
 // list of items
 const list = [
   { name: "Ana Yemekler" },
@@ -56,11 +59,11 @@ export const FoodList = ({ category, foodData }) => {
  
   return (
     <div className="shadowed mt-4">
-      <div className="flex  text-center md:text-left">
+      <div className="flex textColor text-center md:text-left">
    <h2 className="flex font-bold  justify-start p-3">{category}</h2>
    </div>
 
-    <div className="mx-auto  py-2 px-4 sm:px-6 w-full max-w-7xl bg-white">
+    <div className="mx-auto text-gray-500  py-2 px-4 sm:px-6 w-full max-w-7xl ">
     
     <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-2">
     {foods.map((food, index) => (
@@ -76,15 +79,15 @@ export const FoodList = ({ category, foodData }) => {
             {/* :Food DETAILS */}
             <div className="flex flex-col ">
                {/* :Food Name */}
-              <h3 className="text-lg text-gray-700 font-bold">{food.name}</h3>
+              <h3 className="text-lg textColor font-bold">{food.name}</h3>
               {/* ::Price */}
-              <p className="mt-1 mb-10 text-base text-gray-500 font-medium">100 tl</p>
+              <p className="mt-1 mb-10 text-base textColor font-medium">100 tl</p>
            
              
             </div>
   
           </a>
-          <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+          <hr class="h-px my-8 bg-gray-100 border-0 dark:bg-gray-200"></hr>
         </li>
         ))}
     </ul>
@@ -118,7 +121,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <header className="p-2 text-lg font-bold">
+        <header className="p-2 text-lg font-bold text">
           Restaurant Name
         </header>
        <main>

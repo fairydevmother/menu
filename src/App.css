@@ -37,10 +37,10 @@
   border: none;
 }
 .menu-item-wrapper.active {
-  color:#FF6000
+  color:#BEADFA
 }
 .menu-item.active {
-  color:#FF6000
+  color:#BEADFA
 }
 .menu-item.selected {
   /* Apply centering styles here */
@@ -53,4 +53,12 @@
 .shadowed{
   box-shadow: 0px -6px 6px -4px rgba(0,0,0,0.1);
  
+}
+
+.text{
+  color: #A084E8
+}
+
+.textColor{
+  
 }
